@@ -59,10 +59,11 @@ $GLOBALS['TL_DCA']['tl_page']['fields']['hc_inheritance'] = array
 (
 	'label'			=> &$GLOBALS['TL_LANG']['tl_page']['hc_inheritance'],
 	'exclude'		=> true,
-	'default'		=> 1,
+	'default'		=> 'yes',
 	'inputType'		=> 'select',
-	'options'  		=> array(1=>$GLOBALS['TL_LANG']['MSC']['yes'], 0=>$GLOBALS['TL_LANG']['MSC']['no']),
-	'eval'			=> array('tl_class'=>'w50')
+	'options'  		=> array('yes','no'),
+	'eval'			=> array('tl_class'=>'w50'),
+	'reference'		=> &$GLOBALS['TL_LANG']['MSC']
 );
 
 $GLOBALS['TL_DCA']['tl_page']['fields']['hc_mode'] = array
