@@ -94,7 +94,7 @@ class HeaderCode extends Frontend
 			}
 
 			// check the parrents
-			if ((strlen($objRow->hc_code) || strlen($objRow->hc_footer_code)) && $intOldId !== $objRow->id && $objRow->hc_inheritance == 1)
+			if ((strlen($objRow->hc_code) || strlen($objRow->hc_footer_code)) && $intOldId !== $objRow->id && $objRow->hc_inheritance == 'yes')
 			{
 				if (count($objRow->hc_code))
 				{
